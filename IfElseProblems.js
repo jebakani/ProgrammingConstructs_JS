@@ -3,6 +3,7 @@ let min=1000;
 let max=100;
 for(let i=0;i<5;i++)
 {
+    //generate the random value
     let num=Math.floor(Math.random()*900)+100;
     if(num<min)
     {

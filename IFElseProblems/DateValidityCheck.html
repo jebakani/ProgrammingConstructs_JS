@@ -1,0 +1,28 @@
+<!-- Finding the validity of date  -->
+<!DOCTYPE html>
+<html>
+    <script>
+        //reding input from the user
+        var month=parseInt(prompt("enter month (1-12):",3));
+        var date=parseInt(prompt("Enter date:",2));
+        //getting and setting the date 
+        const fromDate=new Date();
+        fromDate.setDate(20);
+        fromDate.setMonth(2);
+        const toDate=new Date();
+        toDate.setDate(20);
+        toDate.setMonth(5);
+        var d=new Date();
+        d.setDate(date);
+        d.setMonth(month);
+        alert(d);
+        if(d.getTime()>=fromDate.getTime() && d.getTime()<=toDate.getTime())
+        {
+           alert("true");
+        }
+        else
+        {
+            alert("False")
+        }
+    </script>
+</html>
