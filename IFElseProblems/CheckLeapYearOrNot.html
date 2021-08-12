@@ -1,0 +1,16 @@
+<!-- P3 to check the year is leap year or not-->
+<!DOCTYPE html>
+<html>
+    <script>
+        //get input from user
+        var year=parseInt(prompt("enter the year:",2000));
+        if(year%4==0 && year%100!=0 || year%400==0)
+        {
+            alert(""+year+" is the leap year");
+        }
+        else
+        {
+            alert(""+year+" is not a leap year");
+        }
+    </script>
+</html>
