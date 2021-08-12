@@ -15,3 +15,15 @@ for(let i=0;i<5;i++)
     }   
 }
 console.log("Min of 5 number is:"+min+"\nMax of 5 number is:"+max);
+
+//P4-Coin flip
+const HEAD=1;
+let coinFlip=Math.floor(Math.random()*10)%2;
+if(coinFlip==HEAD)
+{
+    console.log("Head");
+}
+else
+{
+    console.log("Tail");
+}
