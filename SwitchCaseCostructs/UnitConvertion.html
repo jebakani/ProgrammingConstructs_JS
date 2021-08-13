@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let value=parseInt(prompt("Enter value to be converted:",0));
+        let choice=parseInt(prompt("1.Feet->inches\n2.inches->feet\n3.feet->meter\n4.meter->feet",0));
+        switch(choice)
+        {
+            case 1:
+                var res = value * 12;
+                alert("" + value + "feet =" + res + " inches");
+                break;
+            case 2:
+                var res = value / 12;
+                alert("" + value + "inches =" + res + " feet");
+                break;
+            case 3:
+                var res = value / 3.2808412;
+                alert("" + value + "feet =" + res + " meter");
+                break;
+            case 4:
+                var res = value * 3.28084;
+                alert("" + value + "meter =" + res + " feet");
+                break;
+            default:
+                alert("enter valid option");
+                break;
+        }
+    </script>
+</html>
