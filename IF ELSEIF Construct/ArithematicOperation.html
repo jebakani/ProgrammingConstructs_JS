@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let min=0
+        let max=0;
+        let num1=parseInt(prompt("enter a number:"));
+        let num2=parseInt(prompt("enter second number:"));
+        let num3=parseInt(prompt("enter third number:"));
+        //calculate the four equation
+        let equ1=num1+num2*num3;
+        let equ2=num1%num2+num3;
+        let equ3=num3+num1/num2;
+        let equ4=num1*num2/num3;
+        //Maximum amoung 4 euqation:
+        if(equ1>equ2&&equ1>equ3&&equ1>equ4)
+         {
+            alert("maximum is "+equ1);
+         }
+         else if(equ2>equ1&&equ2>equ3&&equ3>equ4)
+         {
+            alert("maximum is "+equ2);
+         }
+         else if(equ3>equ2&&equ3>equ1&&equ3>equ4)
+         {
+            alert("maximum is "+equ3);
+         }
+         else
+         {
+            alert("maximum is "+equ4);
+         }
+
+         //minimum amoung 4 equation
+         if(equ1<equ2&&equ1<equ3&&equ1<equ4)
+         {
+            alert("minimum is "+equ1);
+         }
+         else if(equ2<equ1&&equ2<equ3&&equ3<equ4)
+         {
+            alert("minimum is "+equ2);
+         }
+         else if(equ3<equ2&&equ3<equ1&&equ3<equ4)
+         {
+            alert("minimum is "+equ3);
+         }
+         else
+         {
+            alert("minimum is "+equ4);
+         }
+    </script>
+</html>
